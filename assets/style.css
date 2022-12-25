@@ -43,6 +43,11 @@ hr#seven {
   }
 
 /*Footer section below*/
+footer {
+    height: 15vh;
+    background-color: #031424;
+}
+
 .logo {
     height: 6vh;
 }
