@@ -1,0 +1,51 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/*Header Below*/
+header {
+    background-image: url(./images/nightsky.jpg);
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+}
+
+.nav-link {
+    color: white !important ;
+}
+
+#logo {
+    height: 7.5vh;
+}
+.nav-div {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapse {
+    display: flex;
+    justify-content: end;
+}
+hr {
+    height: 5px;
+    background: white;
+    border: none;
+    outline: none;
+    margin: 3em 3em 5em;
+    position: relative;
+}
+hr#seven {
+    border-bottom: 1px double white;
+  }
+
+/*Footer section below*/
+.logo {
+    height: 6vh;
+}
+footer>div>a {
+    text-decoration: none;
+}
