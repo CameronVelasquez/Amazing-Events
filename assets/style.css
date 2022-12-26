@@ -13,6 +13,38 @@ header {
     padding: 1rem;
 }
 
+.d-flex {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (max-width:768px) {
+    #navbarNav {
+        justify-content: start;
+    }
+}
+
+
+.button {
+    height: 3rem;
+    width: 4rem;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 10px !important;
+    background-image: url(./images/button-img.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media (min-width: 1024px) {
+    .button {
+        display: none;
+    }
+}
+
 .nav-link {
     color: white !important ;
 }
@@ -42,10 +74,31 @@ hr#seven {
     border-bottom: 1px double white;
   }
 
+.header-title {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-title>h1 {
+    font-size: 11vh;
+    color: white;
+}
+
 /*Footer section below*/
 footer {
     height: 15vh;
     background-color: #031424;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    color: #8EAEBD;
+}
+.rrss {
+    display: flex;
+    gap: 1.5rem;
 }
 
 .logo {
@@ -53,4 +106,221 @@ footer {
 }
 footer>div>a {
     text-decoration: none;
+}
+
+/*Main section below*/
+main {
+    min-height: 5vh;
+    min-width: 30vw;
+    background-color: #30415D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.form-check-label {
+    color: #8EAEBD;
+}
+.category-search {
+    width: 96vw;
+    display: flex;
+    padding: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.search {
+    display: flex;
+    flex-direction:row;
+    min-width: 20vw;
+}
+.btn {
+    color: #8EAEBD !important;
+    border: 1px solid #8EAEBD !important;
+}
+
+/*Main Cards*/
+.card-end {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+}
+#cardImg {
+    border-radius: 10px;
+    padding: 1rem;
+}
+#cardImg2 {
+    border-radius: 10px;
+    padding: 1rem;
+}
+#cardImg3 {
+    border-radius: 10px;
+    padding: 1rem;
+}
+#cardImg4 {
+    border-radius: 10px;
+    padding: 1rem;
+}#cardImg5 {
+    border-radius: 10px;
+    padding: 1rem;
+}#cardImg6 {
+    border-radius: 10px;
+    padding: 1rem;
+}#cardImg7 {
+    border-radius: 10px;
+    padding: 1rem;
+}#cardImg8 {
+    border-radius: 10px;
+    padding: 1rem;
+}#cardImg9 {
+    border-radius: 10px;
+    padding: 1rem;
+}#cardImg10 {
+    border-radius: 10px;
+    padding: 1rem;
+}#cardImg11 {
+    border-radius: 10px;
+    padding: 1rem;
+}#cardImg12 {
+    border-radius: 10px;
+    padding: 1rem;
+}#cardImg13 {
+    border-radius: 10px;
+    padding: 1rem;
+}#cardImg14 {
+    border-radius: 10px;
+    padding: 1rem;
+}
+#cardImg>img {
+    
+}
+.card {
+    background-color: #8EAEBD !important;
+    color: #30415D;
+}
+.btn {
+    background-color: #CF6766 !important;
+}
+.cards-section {
+    width: 85vw;
+    gap: 1rem;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+/*Contact section below*/
+.contact {
+    width: 50vw;
+}
+.form-label {
+    width: 50vw !important;
+    text-align: center;
+    color: #8EAEBD;
+}
+.form-control {
+    width: 30vw !important;
+}
+@media (max-width:768px) {
+    .form-control{
+        width: 70vw !important;
+    }
+}
+.contact-sections {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+textarea {
+    resize: none !important;
+}
+#button-form {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+}
+.btn-dark {
+    color: #30415D !important;
+    border: #30415D !important;
+}
+
+/*Stats section below*/
+
+.table-lists {
+    width: 70vw;
+    color: #30415D;
+    font-size: 1rem;
+    padding: 1rem;
+}
+thead {
+    height: 8vh;
+    background-color: #CF6766;
+    
+}
+tbody>tr,td {
+    background-color: #8EAEBD;
+    width: 70vw;
+}
+.table-one{
+    font-size: 0.9rem;
+}
+tr, td {
+    border: 1px solid #30415D !important;
+}
+@media (max-width:478px) {
+    .table-lists {
+        width: 100vw;
+    }
+    .table-lists, .table-one {
+        font-size: 10px;
+    }
+}
+@media (min-width:478px) and (max-width:1024px){
+    .table-lists{
+        width: 90vw;
+    }
+    
+}
+
+/*Details Card*/
+.detailed-card {
+    background-color: #cf6866b0;
+    min-width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.detailed-img, .detailed-descrip {
+    background-color: #8EAEBD;
+    width: 40vw;
+    height: 60vh;
+    border-radius: 20px;
+}
+.detailed-descrip {
+    font-size: 1.5vh;
+    padding: 1rem;
+}
+.detailed-img {
+    background-image: url(./images/Feria-de-comidas7.jpg) ;
+    background-position: center;
+    background-position-x: -5rem ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media (max-width:768px) {
+    .detailed-descrip, .detailed-img {
+        width: 90vw;
+    }
+    .detailed-card {
+        padding: 0.5rem;
+    }
+    .detailed-descrip{
+        font-size: 12px;
+    }
 }
