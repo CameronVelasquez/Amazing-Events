@@ -7,7 +7,7 @@
 /*Header Below*/
 header {
     background-image: url(./images/nightsky.jpg);
-    height: 50vh;
+    min-height: 50vh;
     background-position: center;
     background-size: cover;
     padding: 1rem;
@@ -62,15 +62,14 @@ header {
     display: flex;
     justify-content: end;
 }
-hr {
+
+hr#seven {
     height: 5px;
     background: white;
     border: none;
     outline: none;
     margin: 3em 3em 5em;
     position: relative;
-}
-hr#seven {
     border-bottom: 1px double white;
   }
 
@@ -85,6 +84,13 @@ hr#seven {
     color: white;
 }
 
+@media (max-width:468px){
+    .upcomingTitle{
+        text-align: center;
+        font-size: 9vh !important;
+    }
+}
+
 /*Footer section below*/
 footer {
     height: 15vh;
@@ -96,6 +102,15 @@ footer {
     padding-right: 3rem;
     color: #8EAEBD;
 }
+
+@media (max-width:320px ) {
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 .rrss {
     display: flex;
     gap: 1.5rem;
@@ -118,6 +133,14 @@ main {
     justify-content: center;
     align-items: center;
     padding: 2rem;
+}
+
+.noCoicidences {
+    color: #031424;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .form-check-label {
@@ -147,55 +170,31 @@ main {
     justify-content: space-between;
     padding: 1rem;
 }
-#cardImg {
-    border-radius: 10px;
-    padding: 1rem;
+#cardImg {  
+    padding: 1rem !important;
 }
-#cardImg2 {
-    border-radius: 10px;
-    padding: 1rem;
+
+.card-img{
+    height: 30vh;
+    width: 16.5vw;
 }
-#cardImg3 {
-    border-radius: 10px;
-    padding: 1rem;
+
+@media (min-width:1440px){
+    .card-img{
+        height: 24vh;
+    }
 }
-#cardImg4 {
-    border-radius: 10px;
-    padding: 1rem;
-}#cardImg5 {
-    border-radius: 10px;
-    padding: 1rem;
-}#cardImg6 {
-    border-radius: 10px;
-    padding: 1rem;
-}#cardImg7 {
-    border-radius: 10px;
-    padding: 1rem;
-}#cardImg8 {
-    border-radius: 10px;
-    padding: 1rem;
-}#cardImg9 {
-    border-radius: 10px;
-    padding: 1rem;
-}#cardImg10 {
-    border-radius: 10px;
-    padding: 1rem;
-}#cardImg11 {
-    border-radius: 10px;
-    padding: 1rem;
-}#cardImg12 {
-    border-radius: 10px;
-    padding: 1rem;
-}#cardImg13 {
-    border-radius: 10px;
-    padding: 1rem;
-}#cardImg14 {
-    border-radius: 10px;
-    padding: 1rem;
+
+@media (min-width:2560px){
+    .card-img{
+        height: 15vh;
+    }
 }
-#cardImg>img {
-    
-}
+
+
+
+
+
 .card {
     background-color: #8EAEBD !important;
     color: #30415D;
@@ -208,6 +207,9 @@ main {
     gap: 1rem;
     margin-top: 5rem;
     justify-content: center;
+}
+.width {
+    font-weight: 500;
 }
 
 /*Contact section below*/
@@ -306,12 +308,12 @@ tr, td {
     padding: 1rem;
 }
 .detailed-img {
-    background-image: url(./images/Feria-de-comidas7.jpg) ;
     background-position: center;
     background-position-x: -5rem ;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 @media (max-width:768px) {
     .detailed-descrip, .detailed-img {
@@ -324,3 +326,10 @@ tr, td {
         font-size: 12px;
     }
 }
+
+@media (min-width:320px) and (max-width:768px) {
+    .detailed-img{
+        object-fit: cover !important;
+    }
+}
+
