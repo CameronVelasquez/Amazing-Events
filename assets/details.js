@@ -1,14 +1,21 @@
-let cadenaParametroUrl = location.search
-let parametros = new URLSearchParams(cadenaParametroUrl)
-let idCard = parametros.get("idUrl")
+let cadenaParametroUrl = location.search //retorna lo que esta pasado el '?' 
+let parametros = new URLSearchParams(cadenaParametroUrl) //convierte el anterior return a URLSearchParams = se puede usar 'get'.
+let idCard = parametros.get("idUrl") //regresa string si obtuvo 'idURL'
 
-let contenedor = document.getElementById("detailed-card")
+let $container = document.getElementById("detailed-card")
+let dataJson;
 
-let propiedadEvents = data.events
+fetch("https://mindhub-xj03.onrender.com/api/amazing")
+    .then(data => data.json())
+    .then( data => {
+        dataJson = data
+        pintarCard(dataJson.events.find(evento => evento._id == idCard), $container)
+    })
+    .catch(err => console.log(err))
 
-let cardEncontrada = propiedadEvents.find(propiedadEvents => propiedadEvents._id == idCard)
+function pintarCard(propiedadEvents, contenedor){
+    
 
-function pintarCard(propiedadEvents){
     contenedor.innerHTML = ""
     let template = `<figure>
     <img  class="detailed-img" src="${propiedadEvents.image}" alt="">
@@ -36,4 +43,4 @@ function pintarCard(propiedadEvents){
     contenedor.innerHTML = template
 }
 
-pintarCard(cardEncontrada)
+

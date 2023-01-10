@@ -270,6 +270,12 @@ tbody>tr,td {
 }
 tr, td {
     border: 1px solid #30415D !important;
+    text-align: center;
+}
+.thead-titles {
+    text-align: center;
+    font-weight: 650;
+    
 }
 @media (max-width:478px) {
     .table-lists {
